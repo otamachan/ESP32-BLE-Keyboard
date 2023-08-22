@@ -172,7 +172,6 @@ public:
   void set_product_id(uint16_t pid);
   void set_version(uint16_t version);
 protected:
-  virtual void onHIDCreated(BLEHIDDevice* hid) { };
   virtual void onStarted(BLEServer *pServer) { };
   virtual void onConnect(BLEServer* pServer) override;
   virtual void onDisconnect(BLEServer* pServer) override;
